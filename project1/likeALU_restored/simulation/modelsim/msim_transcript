@@ -1,0 +1,157 @@
+# Reading C:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do project1_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/ferhat/Desktop/bil\ organizasyon/161044080_prj1/likeALU_restored {C:/Users/ferhat/Desktop/bil organizasyon/161044080_prj1/likeALU_restored/likeALU.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module likeALU
+# 
+# Top level modules:
+# 	likeALU
+# vlog -vlog01compat -work work +incdir+C:/Users/ferhat/Desktop/bil\ organizasyon/161044080_prj1/likeALU_restored {C:/Users/ferhat/Desktop/bil organizasyon/161044080_prj1/likeALU_restored/select.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module select
+# 
+# Top level modules:
+# 	select
+# vlog -vlog01compat -work work +incdir+C:/Users/ferhat/Desktop/bil\ organizasyon/161044080_prj1/likeALU_restored {C:/Users/ferhat/Desktop/bil organizasyon/161044080_prj1/likeALU_restored/addbit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module addbit
+# 
+# Top level modules:
+# 	addbit
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/ferhat/Desktop/bil\ organizasyon/161044080_prj1/likeALU_restored {C:/Users/ferhat/Desktop/bil organizasyon/161044080_prj1/likeALU_restored/likeALU_tb.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module likeALU_tb
+# 
+# Top level modules:
+# 	likeALU_tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiii_ver -L rtl_work -L work -voptargs="+acc"  testALU
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testALU 
+# ** Error: (vsim-3170) Could not find 'C:/Users/ferhat/Desktop/bil organizasyon/161044080_prj1/likeALU_restored/simulation/modelsim/rtl_work.testALU'.
+# 
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./project1_run_msim_rtl_verilog.do PAUSED at line 14
+vsim work.likeALU_tb
+# vsim work.likeALU_tb 
+# Loading work.likeALU_tb
+# Loading work.likeALU
+# Loading work.select
+# Loading work.addbit
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
