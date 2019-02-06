@@ -1,0 +1,119 @@
+  public void print(){
+        printNode(root);
+    }
+    private void printNode(Node<E> localRoot){
+        if(localRoot != null) {
+
+            System.out.printf("%s ",localRoot.data.toString());
+
+            if(localRoot.left != null)
+                printNode(localRoot.left);
+            if(localRoot.right != null){
+                printNode(localRoot.right);
+            }
+        }
+
+    }
+    
+    /*    @Override
+    public boolean remove(E item) {
+
+        if(remove(root,item,0) != null)
+            return true;
+        else
+            return false;
+    }
+
+    private Node<E> remove(Node<E> node,E item,int dimension){
+        if(node != null){
+            dimension %=item.size();
+            int comp =comparator.compare(item.get(dimension),node.data.get(dimension));
+            if(comp <0){
+
+                 node.left =remove(node.left,item,dimension+1);
+                 return node;
+            }
+            else if(comp > 0){
+
+                node.right =remove(node.right,item,dimension+1);
+                return node;
+            }
+            else{
+                returnNode =new Node<E>(node.data);
+                if(node.left == null){
+                    return node.right;
+                }
+                else if(node.right == null){
+                    return node.left;
+                }
+                else if(node.left.right == null){
+                    node.data =node.left.data;
+                    node.left =node.left.left;
+                    return node;
+                }
+                else{
+                    node.data =findLargestChild(node.left);
+                    return node;
+                }
+            }
+        }
+        else
+            return null;
+    }*/
+
+/*    @Override
+    public boolean remove(E item) {
+        returnNode =null;
+        return removeNode(root,item,0);
+    }
+
+    private boolean removeNode(Node<E> node,E item,int dimension){
+        if(node != null){
+            dimension %=item.size();
+            int comp =comparator.compare(item.get(dimension),node.data.get(dimension));
+            if(comp <0){
+                returnNode =node;
+                return removeNode(node.left,item,dimension+1);
+            }
+            else if(comp > 0){
+                returnNode =node;
+                return removeNode(node.right,item,dimension+1);
+            }
+            else{
+                if(node.left == null && node.right ==null){
+                    if(returnNode.left == null){
+                        returnNode.right =null;
+                    }
+                    else if(returnNode.right == null){
+                        returnNode.left =null;
+                    }
+                    else if(node.data.equals(returnNode.left.data)){
+                        returnNode.left =null;
+                    }
+                    else{
+                        returnNode.right =null;
+                    }
+                }
+
+                else if(node.left == null){
+                    node.data = node.right.data;
+                    node.right =null;
+                }
+                else if(node.right == null || node.left.right ==null){
+                    node.data =node.left.data;
+                    Node<E> temp =node.left.right;
+                    node.left =node.left.left;
+                    node.right =temp;
+                }
+                else{
+                    node.data =findLargestChild(node.left);
+                }
+
+                return true;
+            }
+        }
+        else {
+            return false;
+        }
+    }*/
+
